@@ -366,3 +366,104 @@ body {
     }
 }
 /* End Footer */
+
+/* Start Media queries */
+@media only screen and (max-width: 767px) {
+    .header {
+        & nav {
+            & .logo {
+                width: 100px;
+
+                & button {
+                    padding: 5px 10px;
+                    font-weight: normal;
+                }
+
+                & .language-btn {
+                    padding: 5px 10px;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        & .header-content {
+            h1 {
+                font-size: 50px;
+            }
+
+            & .email-signup {
+                & button {
+                    padding: 5px 25px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .features {
+        & .row {
+            flex-direction: column;
+    
+            & .text-col {
+                & h2 {
+                    font-size: 30px;
+                }
+    
+                & p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
+    .faq {
+        & h2 {
+            font-size: 30px;
+        }
+    
+        & .accordion {
+            & li {
+                & label {
+                    font-size: 15px;
+                }
+            }
+        }
+        
+        & .email-signup {
+            & button {
+                padding: 5px 25px;
+                font-size: 13px;
+            }
+        }
+    }
+    
+    .footer {
+        & .row {
+            & .col {
+                position: relative;
+                
+                &:last-of-type {
+                    margin-bottom: 50px;
+                }
+                &:not(:last-child):after {
+                    content: "";
+                    position: absolute;
+                    height: 10px;
+                    width: 100%;
+                    background-color: #232323;
+                    left: 0;
+                    bottom: 0;
+                    margin: -5px 0;
+                    border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    -ms-border-radius: 4px;
+                    -o-border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+
+/* End Media queries */
